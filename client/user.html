@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/darkly.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <title>User Page</title>
+</head>
+
+<body style="background-image: url('img/back3.png'); 
+    background-color: #f3e9d9; background-repeat: no-repeat; background-position: right top; background-size: cover;">
+
+    <header>
+        <!-- NavBar -->
+    </header>
+
+    <!-- Section Find Page -->
+    <section id="find" class="section">
+        <div class="container-fluid mt-0 mb-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 p-0">
+                    <!-- Card -->
+                    <div class="card border-0 mt-3 bg-transparent border-dark">
+                        <div class="card-body text-warning bg-white">
+
+                            <h4 class="p-2">Welcome back, <br><b><div id="profile_name">USER NAME</div></b></h4>
+                            <hr class="bg-primary mb-3">
+
+                            <!-- Button-->
+                            <div class="d-grid gap-3 mt-5 col-lg-4 offset-md-8 p-3">
+                                <div id="profile_loading" style="display: none;">
+                                    <p>Now Loading ...</p>
+                                    <!-- You can also add an animated loader here -->
+                                </div>
+                                <label class="text-primary fs-5 text-center " id="member_type">Guest</label>
+                                <label class="text-primary fs-5 text-center " id="points_level">Points: 0</label>
+                                <button class="btn btn-outline-warning text rounded-0 text-center" type="button">Places You Visited</button>
+                                <button class="btn btn-outline-warning rounded-0 text-center" type="button">Rank a Place</button>
+                                <button class="btn btn-outline-warning rounded-0 text-center" type="button">Next Level</button>
+                                <button class="btn btn-outline-warning rounded-0 text-center" type="button" id="deleteButton">Delete account</button>
+                                <button class="btn btn-outline-warning rounded-0 text-center" type="button">Change Password</button>
+                            </div>
+                            <hr class="bg-primary mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/shared.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    bottom: 0px;
+    left: 66%;
+    transform: translate(-50%, -21%);
+    z-index: 10;
+    max-height: 70%;
+    max-width: 70%;
+}
+
+.section {
+    margin: 0;
+    bottom: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#background-image {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-10%, 0%);
+}
+
+#background-image img {
+    height: 100%;
+    /* Stretch image to fill container height */
+    width: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Cover the entire area while maintaining aspect ratio */
+}
+
+#loadingIndicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+/*cafe table styling options*/
+
+#cafesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cafesTable th {
+    background-color: #385b80;
+    color: #fff4d7;
+}
+
+
+#cafesTable td {
+    padding: 2px;
+    text-align: left;
+}
+
+#cafesTable tr:nth-child(odd) {
+    background-color: #fff7e6;
+}
+
+#cafesTable tr:nth-child(even) {
+    background-color: #fff4d7;
+}
+
+#cafesTable tr:hover {
+    background-color: #fffbf3;
+}
+
+
+.square-100px {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+}
+
+.firstHeading{
+    font-size: medium;
+}
+

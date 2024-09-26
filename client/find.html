@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/darkly.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+
+    <title>Coffee Map Page</title>
+</head>
+
+<body style="background-image: url('img/back3.png'); 
+    background-color: #f3e9d9; background-repeat: no-repeat; background-position: right top; background-size: cover;">
+
+    <header>
+        <!-- NavBar -->
+    </header>
+
+    <!-- Section Find Page -->
+    <section id="find" class="section">
+        <div class="container-fluid mt-0 mb-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 p-0">
+                    <!-- Map Card -->
+                    <div class="card border-0 mt-1 border-dark" style="background-color: #f3e9d9">
+                        <h5 class="card-header bg-primary text-white rounded-0">Coffee Map</h5>
+                        <div class="card-body text-warning">
+                            <p class="card-text">
+                                Check out below the various options of <b>coffee shops</b>.
+                            </p>
+                            <div id="map" style="height: 500px; width: 100%; border-radius: 10px;"></div>
+                            <div id="loadingIndicator" style="display: none;">
+                                <p>Loading cafes...</p>
+                                <!-- You can also add an animated loader here -->
+                            </div>
+                        </div>
+                    </div>
+
+            
+                    <!--top 20 part, will need to style it later-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <button class='btn btn-info w-100 mb-2' id="loadDataButton">Load Top Cafes</button>
+                            </div>
+                            <div class="col-6">
+                                <button class='btn btn-warning w-100 mb-2' id="loadCafeButton">Load Cafes List</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class='mb-5' id="cafesContainer" style="display: none;">
+                        <table class="mx-auto w-100 pe-5 ps-5 rounded-3" id="cafesTable">
+                            <thead class="bg-primary text-white rounded-top">
+                                <tr>
+                                    <th scope="col" class="text-center align-middle px-4">TOP</th>
+                                    <th scope="col" class="text-center align-middle">NAME</th>
+                                    <th scope="col" class="text-center align-middle">RATE</th>
+                                    <th scope="col" class="text-center align-middle">№ REVIEWS</th>
+                                    <th scope="col" class="text-center align-middle">ADDRESS</th>
+                                    <th scope="col" class="text-center align-middle">AMBIENT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+            </div>
+        </div>
+    </section>
+
+    <script src="js/shared.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAiWLw7jE5G1MkBXg_Dw4dsTXDP5de3CU&callback=initMap" async defer></script>
+
+</body>
+
+</html>

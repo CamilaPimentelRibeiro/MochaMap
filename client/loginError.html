@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/darkly.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <title>Register Page</title>
+</head>
+
+<body style="background-image: url('img/back2.png'), url('img/back3.png'); 
+    background-color: #517da5; background-repeat: no-repeat, no-repeat; background-position: left bottom, right top; background-size: cover;" onload="alert('Username or password is incorrect, try again!')">
+
+    <header>
+        <!-- NavBar -->
+    </header>
+
+    <div class="container mt-5">
+        <section id="Login">
+            <div class="row">
+                <!-- Coffee Background -->
+                <div class="d-none d-lg-block img-fluid" id="background-image">
+                    <img src="img/coffeemugs.png" alt="Coffee Mugs">
+                </div>
+                <!-- Form -->
+                <div class="row">
+                    <div class="col-md-6 offset-md-8 d-md-block">
+                        <div class="card border-0 mt-3 p-5 border-dark" style="background-color: #f3e9d9">
+                            <h5 class="card-header bg-primary text-white">Sign In</h5>
+                            <div class="card-body text-white h5">
+                                <form class="row g-3" id="signinForm" action="/login" method="post">
+                                    <div class="mb-3 row mt-4">
+                                        <label for="email" class="col-sm-4 col-form-label text-primary">Username</label>
+                                        <div class="col-sm-8">
+                                            <input type="username" class="form-control" name="username" minlength="5" maxlength="20">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="password" class="col-sm-4 col-form-label text-primary">Password</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" name="password" minlength="5" maxlength="20">
+                                        </div>
+                                    </div>
+                                    <!-- Error Alert -->
+                                    <!-- <div class="mb-3 row"> -->
+                                    <!-- <label class="col-sm-12 col-form-label" id="error1"></label> -->
+                                    <!-- <div class="alert alert-warning h3" name="error"></div>
+          </div>         -->
+                                    <div class="input-group mb-3">
+                                        <div class="btn-group btn-lg text-white h4 text-end" role="group" aria-label="authentication">
+                                            <button type="reset" class="btn btn-info text-end">Clear</button>
+                                            <button type="submit" class="btn btn-primary text-end" id="signInButton">Sign in</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="js/log.js"></script>
+        <!-- <script src="../controllers/RegisterController.js"></script> -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

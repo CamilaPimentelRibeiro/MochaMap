@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/darkly.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <title>MochaMap</title>
+</head>
+
+<body style="background-image: url('img/back3.png'); 
+    background-color: #f3e9d9; background-repeat: no-repeat; background-position: right top; background-size: cover;">
+
+    <header>
+        <!-- NavBar -->
+    </header>
+
+    <div class="container" style=" min-height: 85vh;">
+
+
+        <!-- Modal Example -->
+        <dialog id="noticeDialog" class="alert mt-5 border-0">
+            <div class=" modal-dialogmodal-dialog-centered" style="background-color: rgba(255, 255, 255, 0.9);">
+                <div class="modal-body py-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-transparent border-0">
+                                    <div class="card-body bg-transparent text-primary text-center border-0">
+                                        <a class="navbar-brand mr-auto border-0" href="#">
+                                            <img src="img/brand.png" alt="Bootstrap" width="300"
+                                                class="border-0 align-items-center">
+                                        </a>
+                                        <blockquote class="blockquote mb-0">
+                                            <h3 class="mt-5 strong">Welcome to our website!</h3>
+                                            <hr class="text-warning">
+                                            <p>
+                                                Our website reserves the right to safeguard the information provided,
+                                                which is used for searches within the site.
+                                            </p>
+                                            <hr class="text-warning">
+                                            <div class="input-group mb-3 bg border-0">
+                                                <div class="input-group-text bg-primary">
+                                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input" id="agree">
+                                                </div>
+                                                <input type="text" class="form-control"
+                                                    aria-label="I agree to terms & conditions" value="I agree" disabled>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card-footer text-center bg-transparent">
+                                        <button class="btn btn-sm btn-primary" id="noticeButton">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </dialog>
+
+        <!-- Section Home -->
+        <section id="home" class="section mb-0">
+            <!-- coffee -->
+            <img src="img/coffee.png" alt="Coffee" class="overlay-image d-none d-md-block">
+
+            <div class="container-fluid mt-1 mb-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 p-0">
+                        <!-- Slider -->
+                        <div id="carouselExampleIndicators" class="carousel slide mb-1" data-ride="carousel">
+                            <ol class="carousel-indicators visually-hidden">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/cafe1.jpg" class="d-block w-100" alt="bakery">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/cafe2.jpg" class="d-block w-100" alt="coffee shop">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/cafe3.jpg" class="d-block w-100" alt="bakery">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </div>
+                        <!-- Card -->
+                        <div class="card border-0 mt-5 border-dark" style="background-color: #f3e9d9">
+                            <h5 class="card-header bg-primary text-white rounded-0">New experiences</h5>
+                            <div class="card-body text-warning">
+                                <p class="card-text">
+                                    You are in the <em>perfect place</em> to find your next meeting spot.<br>
+                                    <strong>MochaMap</strong> is designed to help you discover <em>the best coffee
+                                        shops<br> in town</em>, featuring top reviews from users and locations nearest
+                                    to you.
+                                </p>
+                                <hr class="bg-primary mb-3">
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="card border-0 mt-1 border-dark" style="background-color: #f3e9d9">
+                            <h5 class="card-header text-white border-0 bg-primary rounded-0">Find a Coffee Shop</h5>
+                            <div class="card-body text-warning">
+                                <p class="card-text">
+                                    Explore <em>local favorites</em> in our coffee shop directory.<br> Whether it's a
+                                    cozy nook or a vibrant cafe,<br> your <strong>next caffeine fix</strong> is just a
+                                    click away!
+                                    <hr class="bg-primary mb-3">
+                                <footer class="blockquote-footer text-primary"><a class="text-primary"
+                                        href="find.html">Find your new
+                                        experience</a></footer>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Footer -->
+
+
+        <script src="js/shared.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
