@@ -7,3 +7,6 @@
 ### npm install mongoose
 ### npm install bcrypt
 ### npm install express-session 
+
+
+Collaborators: Camila Pimentel, Luiz Eduardo and Victor Lino.
