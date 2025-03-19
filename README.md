@@ -1,3 +1,6 @@
+![portfolio](https://github.com/user-attachments/assets/65b9ae22-2907-4ea9-88f9-bed012e9aa1e)
+
+
 # Instructions:
 
 ## **Node packages installation:**
@@ -9,4 +12,8 @@
 ### npm install express-session 
 
 
-Collaborators: Camila Pimentel, Luiz Eduardo and Victor Lino.
+Authors
+
+Camila Pimentel
+Luiz Eduardo
+Victor Lino.
